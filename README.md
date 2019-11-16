@@ -1,6 +1,50 @@
 # ElasticSearchInstallation
-
-
+    - Added mapping or for data
+    ``PUT /bigmarketdata
+        {
+        "mappings": {
+            "marketData":{
+            "properties": {
+            "Item_Identifier": {
+            "type" : "keyword"
+            },
+            "Item_Weight": {
+                "type" : "float"
+            },
+            "Item_Fat_Content": {
+                "type": "keyword"
+            },
+            "Item_Visibility": {
+                "type": "float"
+            },
+            "Item_Type": {
+                "type": "float"
+            },
+            "Item_MRP": {
+                "type": "float"
+            },
+            "Outlet_Identifier": {
+                "type": "keyword"
+            },
+            "Outlet_Establishment_Year": {
+                "type": "integer"
+            },
+            "Outlet_Size": {
+                "type": "keyword"
+            },
+            "Outlet_Location_Type": {
+                "type": "keyword"
+            },
+            "Outlet_Type": {
+                "type": "keyword"
+            },
+            "Item_Outlet_Sales": {
+                "type": "float"
+            } 
+            }
+            }
+        }
+        }``
 ## GIT BASIC 
     - git add filename "Add the file locally"
     - git commit -m "message" "After adding file commit the change with a message"
